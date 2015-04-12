@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VwMDVVBSGwEBUVBbBQU="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,2:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,2:24,ee:"QJf3ax"}],9:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,2:24,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,2:24,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),f=c.document,u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+<title>Lifestyle News, Resources and Columns</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0"/>
+<!--[if IE 7]>
+    <link rel="stylesheet" href="http://cdn-4.lifehack.org/wp-content/themes/lifehack-theme/css/font-awesome-ie7.min.css">
+<![endif]-->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="Lifehack RSS Feed" href="http://www.lifehack.org/feed"/>
+<link rel="alternate" type="application/atom+xml" title="Lifehack Atom Feed" href="http://www.lifehack.org/feed/atom"/>
+<link rel="pingback" href=""/>
+<link rel="shortcut icon" href="http://cdn-4.lifehack.org/wp-content/themes/lifehack-theme/images/favicon.ico">
+<link href="http://cdn-4.lifehack.org/wp-content/themes/lifehack-theme/images/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed"/>
+<link href="http://cdn-4.lifehack.org/wp-content/themes/lifehack-theme/images/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72"/>
+<link href="http://cdn-4.lifehack.org/wp-content/themes/lifehack-theme/images/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114"/>
+<link href="http://cdn-4.lifehack.org/wp-content/themes/lifehack-theme/images/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144"/>
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+<script src="//d2wy8f7a9ursnm.cloudfront.net/bugsnag-2.min.js" data-apikey="5c8aa4cbf440b911c18f433e3ea447c8" data-appversion="70e20546f22ce4e08630d57091dd6fa46007a317"></script>
+<link rel="canonical" href="http://www.lifehack.org/lifestyle"/>
+<link rel="next" href="http://www.lifehack.org/lifestyle/page/2"/>
+<link rel="alternate" type="application/rss+xml" title="Lifehack &raquo; Lifestyle Category Feed" href="http://www.lifehack.org/lifestyle/feed"/>
+<style data-style-type="inline">#header,.stickygroup-regular,.feed-tab,.news-feed-popular,.news-feed-social,.ebook-promotion-feed{display:none}
+.popup,.popup-overlay{display:none !important}
+#news-feed-post img{width:370px;height:208px}
+</style><link rel='stylesheet' id='default.css-style-css' href='http://cdn-4.lifehack.org/wp-content/themes/lifehack-theme/css/default.css?ver=1427315380' type='text/css' media='all'/>
+<link rel='stylesheet' id='custom-google-fonts-css' href='http://fonts.googleapis.com/css?family=PT+Serif%3A400%2C700%2C400italic%2C700italic%7CRoboto%3A400%2C500%2C700%2C300%2C300italic%2C400italic%2C500italic%2C700italic&#038;ver=3.9.3' type='text/css' media='all'/>
+<script type='text/javascript' src='http://cdn.jsdelivr.net/g/jquery@1.11.0,underscorejs@1.7.0,backbonejs@1.1.2,requirejs@2.1.9'></script>
+<meta property='fb:app_id' content='22054340448'/>
+<meta property='fb:admins' content='625666248'/>
+<meta property='og:locale' content='en_US'/>
+<meta property='og:type' content='website'/>
+<meta property='og:title' content='Lifestyle News, Resources and Columns'/>
+<meta property='og:description' content='Tips for Life'/>
+<meta property='og:url' content='http://www.lifehack.org/articles/lifestyle'/>
+<meta property='og:site_name' content='Lifehack'/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:site" content="@lifehackorg"/>
+<meta name="twitter:domain" content="Lifehack"/>
+<link href="https://plus.google.com/100694246174303931807" rel="publisher"/>
+<style type='text/css'>img#wpstats{display:none}</style>
+<script>
+			var css_path = "http://cdn-4.lifehack.org/wp-content/themes/lifehack-theme/css/default.css";
+			var css_version = "9e3733cc02beb3189bd33e8024678c79";
+			var css;
+			try {
+				css = localStorage.getItem("lh.css");
+			} catch (e) {
+			}
+			if( css ){
+				var att=document.createAttribute("data-style-type");
+				att.value="ls";
+				var style = document.createElement("style");
+					script = document.getElementsByTagName("script");
+				style.setAttributeNode(att);
+				style.type = "text/css";
+				style.appendChild(document.createTextNode(css));
+				script[0].parentNode.insertBefore(style, script[0]);
+			}else{
+				window.scrollTo(0,0);
+			}
+	</script><script>window.jQuery || document.write('<script src="http://cdn-5.lifehack.org/wp-content/themes/lifehack-theme/scripts/lib/lib_fallback.js">');</script><script type="text/javascript">var dataLayer = [{'pageType': 'category','topic': 'Lifestyle','taxonomy_id': '18'}];</script><script type="text/javascript">var abtestList = {"908":"255735","912":"227514","740":"231366","907":"243463","894":"slide-in-nav-bar-tablet-manual-fix","913":"welcome-box-mini-book-t2-manual-fix"};</script><script type="text/javascript">
+	var cube_server_url = "http://t.lifehack.org:1080/1.0/event/put";
+	var newsletter_ask_confirm_url = "http://www.lifehack.org/newsletter/ask-confirm";
+	</script><script type="text/javascript">var app_ver = "70e20546f22ce4e08630d57091dd6fa46007a317";</script><script>requirejs.config({ baseUrl: 'http://cdn-5.lifehack.org/wp-content/themes/lifehack-theme/scripts', }); require(['http://cdn-5.lifehack.org/wp-content/themes/lifehack-theme/scripts/main-built.js']);</script><script type="text/javascript">var ajax_url = "http://www.lifehack.org/wp-admin/admin-ajax.php";</script>
+<div id="page-cache-comments" data-comments="generated in 0.309 seconds. 51874 bytes batcached for 86400 seconds." data-key="c439dd7d1a9c51d3509c504e97e398c3" style="display:none;"></div></head>
+<!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+<!--[if gt IE 9]>  <body>             <![endif]-->
+<!--[if !IE]><!--> <body class="archive category category-lifestyle category-18"> <!--<![endif]-->
+<div id="fb-root"></div>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-JMBM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-JMBM');</script>
+<header id="header">
+<div class="container">
+<div id="mobile-nav" class="hidden-desktop">
+<a href="/">
+<div class="logo"></div>
+</a>
+</div>
+</div>
+<div class="container">
+<nav id="category" class="visible-desktop">
+<ul class="lh-category-dropdown" role="menu">
+<li>
+<a href="/">
+<div class="logo"></div>
+</a>
+</li>
+<li data-submenu-id="submenu-lifestyle" class="category-logo "><div class="lifestyle"><a class="button lifestyle" href="/lifestyle"> Lifestyle</a><div class="cat-hover" id="submenu-lifestyle"><div class="cat-post"><ul><li><a href="lifestyle/15-questions-ask-your-kids-help-them-have-good-mindsets.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="15 Questions To Ask Your Kids To Help Them Have Good Mindsets" bgcolor="#b1b4b5" data-bttrlazyloading-xs='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/happy-kids1-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/happy-kids1-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/happy-kids1-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/happy-kids1-170x170.jpg", "width" : 70,  "height" : 70}'></div><div class="title">15 Questions To Ask Your Kids To Help Them Have Good Mindsets</div></a></li><li><a href="technology/the-100-most-useful-websites-the-internet.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="The 100 Most Useful Websites On The Internet" bgcolor="#9fa2aa" data-bttrlazyloading-xs='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/picjumbo.com_HNCK4400-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/picjumbo.com_HNCK4400-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/picjumbo.com_HNCK4400-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/picjumbo.com_HNCK4400-170x170.jpg", "width" : 70,  "height" : 70}'></div><div class="title">The 100 Most Useful Websites On The Internet</div></a></li><li><a href="lifestyle/10-things-only-people-who-are-born-travel-will-understand.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="10 Things Only People Who Are Born To Travel Will Understand" bgcolor="#797076" data-bttrlazyloading-xs='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/03/10-Things-Only-People-Who-Are-Born-To-Travel-Will-Understand-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/03/10-Things-Only-People-Who-Are-Born-To-Travel-Will-Understand-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/03/10-Things-Only-People-Who-Are-Born-To-Travel-Will-Understand-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/03/10-Things-Only-People-Who-Are-Born-To-Travel-Will-Understand-170x170.jpg", "width" : 70,  "height" : 70}'></div><div class="title">10 Things Only People Who Are Born To Travel Will Understand</div></a></li><li><a href="communication/the-12-rules-facebook-etiquette.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="The 12 Rules Of Facebook Etiquette" bgcolor="#d9d9dc" data-bttrlazyloading-xs='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/03/fb-170x170.png", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/03/fb-170x170.png", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/03/fb-170x170.png", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/03/fb-170x170.png", "width" : 70,  "height" : 70}'></div><div class="title">The 12 Rules Of Facebook Etiquette</div></a></li></ul></div><div class="sub-cat "><ul><li>MORE IN Lifestyle</li><li name="Family" class="Family"><a href="/lifestyle/family">Family</a></li><li name="Fitness" class="Fitness"><a href="/lifestyle/fitness-2">Fitness</a></li><li name="Food and Drink" class="Food and Drink"><a href="/lifestyle/food-and-drink">Food and Drink</a></li><li name="Health" class="Health"><a href="/lifestyle/health">Health</a></li><li name="Home" class="Home"><a href="/lifestyle/home">Home</a></li><li name="Leisure" class="Leisure"><a href="/lifestyle/leisure">Leisure</a></li></ul></div><div class="go-page"><a href="/lifestyle">Go to Lifestyle</a></div></div></div></li><li data-submenu-id="submenu-health" class=""><div class="health lifestyle"><a class="button lifestyle" href="/lifestyle/health"> Health</a><div class="cat-hover" id="submenu-health"><div class="cat-post"><ul><li><a href="communication/the-12-rules-facebook-etiquette.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="The 12 Rules Of Facebook Etiquette" bgcolor="#d9d9dc" data-bttrlazyloading-xs='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/fb-170x170.png", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/fb-170x170.png", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/fb-170x170.png", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/fb-170x170.png", "width" : 70,  "height" : 70}'></div><div class="title">The 12 Rules Of Facebook Etiquette</div></a></li><li><a href="productivity/16-reasons-reduce-your-mobile-dependence.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="16 Reasons to Reduce Your Mobile Dependence" bgcolor="#7a656b" data-bttrlazyloading-xs='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/mobile-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/mobile-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/mobile-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/mobile-170x170.jpg", "width" : 70,  "height" : 70}'></div><div class="title">16 Reasons to Reduce Your Mobile Dependence</div></a></li><li><a href="lifestyle/10-reasons-you-should-meditate-every-day.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="10 Reasons You Should Meditate Every Day" bgcolor="#bfa34b" data-bttrlazyloading-xs='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/02/11008908_10205126177446942_2049094054_n-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/02/11008908_10205126177446942_2049094054_n-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/02/11008908_10205126177446942_2049094054_n-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/02/11008908_10205126177446942_2049094054_n-170x170.jpg", "width" : 70,  "height" : 70}'></div><div class="title">10 Reasons You Should Meditate Every Day</div></a></li><li><a href="lifestyle/15-effective-ways-improve-your-sleep-right-now.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="15 Effective Ways to Improve Your Sleep Right Now" bgcolor="#757171" data-bttrlazyloading-xs='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/02/12B5400E80-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/02/12B5400E80-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/02/12B5400E80-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/02/12B5400E80-170x170.jpg", "width" : 70,  "height" : 70}'></div><div class="title">15 Effective Ways to Improve Your Sleep Right Now</div></a></li></ul></div><div class="sub-cat no-sub-cat"><ul><li>MORE IN Health</li></ul></div><div class="go-page"><a href="/lifestyle/health">Go to Health</a></div></div></div></li><li data-submenu-id="submenu-fitness-2" class=""><div class="fitness-2 lifestyle"><a class="button lifestyle" href="/lifestyle/fitness-2"> Fitness</a><div class="cat-hover" id="submenu-fitness-2"><div class="cat-post"><ul><li><a href="lifestyle/4-ways-boost-the-intensity-your-workout-without-adding-more-weight.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="4 Ways To Boost The Intensity Of Your Workout Without Adding More Weight" bgcolor="#c8bbb6" data-bttrlazyloading-xs='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/Utilize-Weight-Lifting-Tempo-Step-3-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/Utilize-Weight-Lifting-Tempo-Step-3-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/Utilize-Weight-Lifting-Tempo-Step-3-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/Utilize-Weight-Lifting-Tempo-Step-3-170x170.jpg", "width" : 70,  "height" : 70}'></div><div class="title">4 Ways To Boost The Intensity Of Your Workout Without Adding More Weight</div></a></li><li><a href="lifestyle/5-myths-about-working-out.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="5 Myths About Working Out" bgcolor="#483e48" data-bttrlazyloading-xs='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/5608279632_9fefddf14a_b-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/5608279632_9fefddf14a_b-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/5608279632_9fefddf14a_b-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/5608279632_9fefddf14a_b-170x170.jpg", "width" : 70,  "height" : 70}'></div><div class="title">5 Myths About Working Out</div></a></li><li><a href="lifestyle/7-negative-weight-loss-mindsets-overcome.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="7 Negative Weight Loss Mindsets to Overcome" bgcolor="#b1abaa" data-bttrlazyloading-xs='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/Fitness-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/Fitness-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/Fitness-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/Fitness-170x170.jpg", "width" : 70,  "height" : 70}'></div><div class="title">7 Negative Weight Loss Mindsets to Overcome</div></a></li><li><a href="lifestyle/the-top-five-things-people-worry-about-that-dont-actually-matter-for-weight-loss.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="The Top Five Things People Worry About That Don’t Actually Matter For Weight Loss" bgcolor="#8e685f" data-bttrlazyloading-xs='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/Untitled-21-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/Untitled-21-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/Untitled-21-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/Untitled-21-170x170.jpg", "width" : 70,  "height" : 70}'></div><div class="title">The Top Five Things People Worry About That Don’t Actually Matter For Weight Loss</div></a></li></ul></div><div class="sub-cat no-sub-cat"><ul><li>MORE IN Fitness</li></ul></div><div class="go-page"><a href="/lifestyle/fitness-2">Go to Fitness</a></div></div></div></li><li data-submenu-id="submenu-food-and-drink" class=""><div class="food-and-drink lifestyle"><a class="button lifestyle" href="/lifestyle/food-and-drink"> Food and Drink</a><div class="cat-hover" id="submenu-food-and-drink"><div class="cat-post"><ul><li><a href="lifestyle/make-your-own-ice-cream-with-only-two-ingredients-and-machine.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="Make Your Own Ice Cream With Only Two Ingredients And No Machine" bgcolor="#bd9d82" data-bttrlazyloading-xs='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/02/Homemade-Ice-Cream-No-Machine-with-only-2-Ingredients-Gemmas-Bigger-Bolder-Baking-Ep.-21-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/02/Homemade-Ice-Cream-No-Machine-with-only-2-Ingredients-Gemmas-Bigger-Bolder-Baking-Ep.-21-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/02/Homemade-Ice-Cream-No-Machine-with-only-2-Ingredients-Gemmas-Bigger-Bolder-Baking-Ep.-21-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/02/Homemade-Ice-Cream-No-Machine-with-only-2-Ingredients-Gemmas-Bigger-Bolder-Baking-Ep.-21-170x170.jpg", "width" : 70,  "height" : 70}'></div><div class="title">Make Your Own Ice Cream With Only Two Ingredients And No Machine</div></a></li><li><a href="lifestyle/make-these-5-healthy-smoothies-boost-your-5-weekdays.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="Make These 5 Healthy Smoothies To Boost Your 5 Weekdays" bgcolor="#c0906a" data-bttrlazyloading-xs='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/5-Healthy-Breakfast-Smoothies-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/5-Healthy-Breakfast-Smoothies-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/5-Healthy-Breakfast-Smoothies-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/5-Healthy-Breakfast-Smoothies-170x170.jpg", "width" : 70,  "height" : 70}'></div><div class="title">Make These 5 Healthy Smoothies To Boost Your 5 Weekdays</div></a></li><li><a href="lifestyle/10-superfoods-that-will-boost-your-mood.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="10 Superfoods That Will Super Boost Your Mood" bgcolor="#a9a38d" data-bttrlazyloading-xs='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/Superfoods-boost-mood-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/Superfoods-boost-mood-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/Superfoods-boost-mood-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/Superfoods-boost-mood-170x170.jpg", "width" : 70,  "height" : 70}'></div><div class="title">10 Superfoods That Will Super Boost Your Mood</div></a></li><li><a href="lifestyle/extremely-easy-way-quickly-peel-boiled-egg.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="An Extremely Easy Way to Quickly Peel a Boiled Egg" bgcolor="#624c3a" data-bttrlazyloading-xs='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/Egg_colours-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/Egg_colours-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/Egg_colours-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/Egg_colours-170x170.jpg", "width" : 70,  "height" : 70}'></div><div class="title">An Extremely Easy Way to Quickly Peel a Boiled Egg</div></a></li></ul></div><div class="sub-cat no-sub-cat"><ul><li>MORE IN Food and Drink</li></ul></div><div class="go-page"><a href="/lifestyle/food-and-drink">Go to Food and Drink</a></div></div></div></li><li data-submenu-id="submenu-leisure" class=""><div class="leisure lifestyle"><a class="button lifestyle" href="/lifestyle/leisure"> Leisure</a><div class="cat-hover" id="submenu-leisure"><div class="cat-post"><ul><li><a href="lifestyle/10-things-only-people-who-are-born-travel-will-understand.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="10 Things Only People Who Are Born To Travel Will Understand" bgcolor="#797076" data-bttrlazyloading-xs='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/10-Things-Only-People-Who-Are-Born-To-Travel-Will-Understand-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/10-Things-Only-People-Who-Are-Born-To-Travel-Will-Understand-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/10-Things-Only-People-Who-Are-Born-To-Travel-Will-Understand-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/10-Things-Only-People-Who-Are-Born-To-Travel-Will-Understand-170x170.jpg", "width" : 70,  "height" : 70}'></div><div class="title">10 Things Only People Who Are Born To Travel Will Understand</div></a></li><li><a href="lifestyle/25-creative-products-that-you-never-knew-you-needed.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="25 Creative Products That You Never Knew You Needed" bgcolor="#43342a" data-bttrlazyloading-xs='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/02/iphone-563060_1280-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/02/iphone-563060_1280-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/02/iphone-563060_1280-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/02/iphone-563060_1280-170x170.jpg", "width" : 70,  "height" : 70}'></div><div class="title">25 Creative Products That You Never Knew You Needed</div></a></li><li><a href="lifestyle/8-places-visit-before-its-too-late.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="8 Places To Visit Before It&#039;s Too Late" bgcolor="#708b8c" data-bttrlazyloading-xs='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/canal-grande-337987_1280-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/canal-grande-337987_1280-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/canal-grande-337987_1280-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/canal-grande-337987_1280-170x170.jpg", "width" : 70,  "height" : 70}'></div><div class="title">8 Places To Visit Before It's Too Late</div></a></li><li><a href="lifestyle/40-attractive-places-visit-which-are-always-overlooked.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="40 Attractive Places To Visit Which Are Always Overlooked" bgcolor="#857464" data-bttrlazyloading-xs='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/wintersleepcappadocialongshot-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/wintersleepcappadocialongshot-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/wintersleepcappadocialongshot-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/03/wintersleepcappadocialongshot-170x170.jpg", "width" : 70,  "height" : 70}'></div><div class="title">40 Attractive Places To Visit Which Are Always Overlooked</div></a></li></ul></div><div class="sub-cat no-sub-cat"><ul><li>MORE IN Leisure</li></ul></div><div class="go-page"><a href="/lifestyle/leisure">Go to Leisure</a></div></div></div></li><li data-submenu-id="submenu-family" class=""><div class="family lifestyle"><a class="button lifestyle" href="/lifestyle/family"> Family</a><div class="cat-hover" id="submenu-family"><div class="cat-post"><ul><li><a href="lifestyle/10-life-skills-every-parent-should-teach-their-kids.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="10 Life Skills Every Parent Should Teach Their Kids" bgcolor="#a99798" data-bttrlazyloading-xs='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/02/symphony-of-love-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/02/symphony-of-love-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/02/symphony-of-love-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-1.lifehack.org/wp-content/files/2015/02/symphony-of-love-170x170.jpg", "width" : 70,  "height" : 70}'></div><div class="title">10 Life Skills Every Parent Should Teach Their Kids</div></a></li><li><a href="lifestyle/8-reasons-why-children-should-not-use-handheld-devices-frequently.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="8 Reasons Why Children Should Not Use Handheld Devices Frequently" bgcolor="#615a5d" data-bttrlazyloading-xs='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/Handheldlifhack-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/Handheldlifhack-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/Handheldlifhack-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/02/Handheldlifhack-170x170.jpg", "width" : 70,  "height" : 70}'></div><div class="title">8 Reasons Why Children Should Not Use Handheld Devices Frequently</div></a></li><li><a href="lifestyle/11-things-every-parent-can-make-their-kids-much-happier.html"><div><img class="attachment-thumbnail wp-post-image lazy-img" alt="11 Things Every Parent Can Do To Make Their Kids Much Happier" bgcolor="#afab8f" data-bttrlazyloading-xs='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/03/Make-Kids-happy-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-sm='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/03/Make-Kids-happy-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-md='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/03/Make-Kids-happy-170x170.jpg", "width" : 70,  "height" : 70}' data-bttrlazyloading-lg='{"src": "http://cdn-media-2.lifehack.org/wp-content/files/2015/03/Make-Kids-happy-170x170.jpg", "width" : 70,  "height" : 70}'></div><div class="title">11 Things Every Parent Can Do To Make Their Kids Much Happier</div></a></li></ul></div><div class="sub-cat no-sub-cat"><ul><li>MORE IN Family</li></ul></div><div class="go-page"><a href="/lifestyle/family">Go to Family</a></div></div></div></li>	<li data-submenu-id="submenu-more" id="submenu-more-button">
+<div class="more">
+<a class="button">
+<span class="icon icon_dots"></span>
+</a>
+</div>
+<div id="submenu-more">
+<div class="container">
+<ul class="big-section">
+<b>All Sections</b>
+<div class="category-column">
+<li><a class="main-category" href="/communication">Communication</a></li>
+<li><a class="sub-category" href="/communication/motivation">Motivation</a></li>
+<li><a class="sub-category" href="/communication/relationships">Relationships</a></li>
+<li><a class="main-category" href="/lifestyle">Lifestyle</a></li>
+<li><a class="sub-category" href="/lifestyle/family">Family</a></li>
+<li><a class="sub-category" href="/lifestyle/fitness-2">Fitness</a></li>
+<li><a class="sub-category" href="/lifestyle/food-and-drink">Food And Drink</a></li>
+<li><a class="sub-category" href="/lifestyle/health">Health</a></li>
+</div>
+<div class="category-column">
+<li><a class="sub-category" href="/lifestyle/home">Home</a></li>
+<li><a class="sub-category" href="/lifestyle/leisure">Leisure</a></li>
+<li><a class="main-category" href="/money">Money</a></li>
+<li><a class="main-category" href="/productivity">Productivity</a></li>
+<li><a class="main-category" href="/technology">Technology</a></li>
+<li><a class="sub-category" href="/technology/ios">iOS</a></li>
+<li><a class="sub-category" href="/technology/mac">Mac</a></li>
+<li><a class="main-category" href="/work">Work</a></li>
+</div>
+</ul>
+<ul class="section">
+<b>Products</b>
+<li><a href="http://quotes.lifehack.org" target="_blank">Quotes</a></li>
+<li><a href="http://lifehack.org/books" target="_blank">Books</a></li>
+<li><a href="http://deals.lifehack.org" target="_blank">Deals</a></li>
+<li><a href="http://www.listible.com/?ref=lifehack_header" target="_blank">Listible</a></li>
+</ul>
+<ul class="section">
+<b>About</b>
+<li><a href="/about" target="_blank">About Lifehack</a></li>
+<li><a href="/authors" target="_blank">Authors</a></li>
+<li><a href="/contact" target="_blank">Contact</a></li>
+<li><a href="/contribute" target="_blank">Contribute</a></li>
+<li><a href="/advertise" target="_blank">Advertise</a></li>
+<li><a href="/about/terms-and-conditions" target="_blank">Terms</a></li>
+<li><a href="/privacypolicy" target="_blank">Privacy</a></li>
+</ul>
+<ul class="section">
+<b>Follow Us</b>
+<li><a href="/newsletter/subscription" target="_blank">Newsletter</a></li>
+<li><a href="https://www.facebook.com/lifehackorg" target="_blank">Facebook</a></li>
+<li><a href="https://twitter.com/lifehackorg" target="_blank">Twitter</a></li>
+<li><a href="https://plus.google.com/+lifehack/" target="_blank">Google+</a></li>
+<li><a href="http://pinterest.com/lifehack/" target="_blank">Pinterest</a></li>
+<li><a href="https://www.youtube.com/user/LifehackOrg/" target="_blank">Youtube</a></li>
+<li><a href="http://instagram.com/lifehackorg" target="_blank">Instagram</a></li>
+<li><a href="http://feeds.lifehack.org/Lifehack" target="_blank">RSS</a></li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</nav>
+<div id="navigation" class="visible-desktop">
+<ul class="lh-navigation-dropdown" role="menu">
+<li data-submenu-id="submenu-search" class="search">
+<a class="icon_search icon button"></a>
+<div class="search-popover nav-popover" id="submenu-search">
+<form action="http://www.google.com/cse" class="form-search">
+<input type="hidden" name="cx" value="partner-pub-9079061040234685:riohha-12jb"/>
+<input type="hidden" name="ie" value="UTF-8"/>
+<input type="text" name="q" class="input-medium search-query" id="nav-search" placeholder="Search Lifehack" value="Search Lifehack" autofocus onfocus="if (this.value == 'Search Lifehack') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search Lifehack';}"/>
+</form>
+</div>
+</li>
+<li data-submenu-id="submenu-profile">
+<div class="nav-profile">
+<a class="icon icon_user" href="/user/login" target="blank"></a>
+</div>
+</li>
+<li class="nav-bar-facebook">
+<div class="navbar-facebook-like pre-facebook-like">
+<div class="fb-like-button">
+<div class="icon icon_facebook-2"></div>
+<div class="fb-label">Like</div>
+</div>
+<div class="bubble">
+298K	</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</header>
+<script type="text/javascript">
+    $(function() {
+        $('#nav_user_login').attr('placeholder', 'Your Email Address');
+        $('#nav_user_pass').attr('placeholder', 'Password');
+    });
+</script>
+<div class="category-banner">
+<img src="http://cdn-4.lifehack.org/wp-content/themes/lifehack-theme/images/category_banner/lifestyle.png">
+<h2><span class="icon_lifehack-logo icon"></span> LIFEHACK LIFESTYLE</h2>
+</div>
+<div id="archive-category">
+<div class="container">
+<div id="news-feed">
+<div class="row">
+<div class="span12">
+<div class="ad-row hidden-phone">
+<div id='div-gpt-ad-top' class='adslot ad-unit' data-dfp='SiteTop728x90' style='width:728px; height:90px;'>
+</div>
+</div>	</div>
+</div>
+<div class="row feed">
+<div class="span12">
+<div class="cat_nav" id="Lifestyle-link"><ul><li name="Lifestyle" class="active"><a href="/lifestyle">Lifestyle</a></li><li name="Family" class="Family"><a href="/lifestyle/family">Family</a></li><li name="Fitness" class="Fitness"><a href="/lifestyle/fitness-2">Fitness</a></li><li name="Food and Drink" class="Food and Drink"><a href="/lifestyle/food-and-drink">Food and Drink</a></li><li name="Health" class="Health"><a href="/lifestyle/health">Health</a></li><li name="Home" class="Home"><a href="/lifestyle/home">Home</a></li><li name="Leisure" class="Leisure"><a href="/lifestyle/leisure">Leisure</a></li></div>
+<h1 id="section"></h1>
+<div class="ebook-promotion-feed hidden-phone" style="display:none">
+<a href="http://lifehack.org/books" target="_blank">
+<img src="http://cdn-4.lifehack.org/wp-content/themes/lifehack-theme/images/productive_ad_banner.png">
+</a>
+</div>
+<div class="row">
+<div class="span12" id="news-feed-post">
+</div>
+</div>
+<div class="row">
+<div class="span12">
+<div id="loading">
+<span class="mask"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside id="welcome-ebook-overlay"></aside>
+<aside id="welcome-ebook-box" class="show-tracker popup" data-section="welcome-ebook" data-popup-type="modal">
+<span class="close"> × </span>
+<div class="product">
+<h1>Subscribe to Newsletter <br> And Get Ebook For Free</h1>
+</div>
+<div class="newsletter">
+<form action="/newsletter/ask-confirm" name="mc-embedded-subscribe-form" method="post" target="_blank">
+<input type="email" class="email" name="email" placeholder="My email address"/>
+<input type="hidden" name="extra_json" value='{"welcome_box_mini_ebook":"1"}'/>
+<button class="newsletter-submit button-tracker" type="submit" value="Subscribe">
+Subscribe &amp; Get Ebook
+</button>
+<div class="warning"> Please enter a valid email address</div>
+</form>
+<a class="newsletter-cancel">No, I don't really want to be productive.</a>
+</div>
+</aside>
+<aside id="welcome-popup-overlay" class="popup-overlay"></aside>
+<aside id="welcome-popup-box" class="show-tracker popup" data-section="welcome-popup" data-popup-type="modal">
+<a class="close"> × </a>
+<div class="question">
+<h4 class="welcome-quote">It's never too late to start over. If you weren't happy with yesterday, try something different today. Don't stay stuck. Do better.</h4>
+<a class="button agree-button">I agree</a>
+<a class="button disagree-button">I disagree</a>
+</div>
+<div class="newsletter">
+<h4>We think so, too!</h4>
+<h5>Join Lifehack newsletter and we will inspire you to pursue a happier existence.</h5>
+<form action="/newsletter/ask-confirm" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<input type="email" id="mce-EMAIL" class="email" name="email" placeholder="Your email address"/>
+<input type="hidden" value="LifeHack" name="uri"/>
+<input type="hidden" value="en_US" name="loc"/>
+<input type="hidden" data-dojo-type="dijit/form/CheckBox" id="group_1" name="group[13][1]" value="1" class="av-checkbox" checked>
+<button class="email-button newsletter-submit button-tracker" type="submit" value="Subscribe">
+Sign up for free!
+</button>
+</form>
+<div class="warning"> Please enter a valid email address</div>
+</div>
+<div class="social">
+<h4>We think so, too!</h4>
+<div class="facebook-like">
+<h5>Like us on Facebook and we will inspire you to pursue a happier existence.</h5>
+<a class="button facebook-like-button" href="https://www.facebook.com/lifehackorg" target="_blank">
+<span class="icon icon_facebook"></span>Like us
+</a>
+<div class="bubble"> 298072 </div>
+</div>
+<div class="twitter">
+<h5>Follow us on Twitter and we will inspire you to pursue a happier existence.</h5>
+<a class="button" target="_blank" href="https://twitter.com/lifehackorg">
+<span class="icon icon_twitter"></span> Follow Us
+</a>
+<div class="bubble"> 76294 </div>
+</div>
+<div class="google">
+<h5>Circle us on Google+ and we will inspire you to pursue a happier existence.</h5>
+<a class="button" target="_blank" href="https://plus.google.com/+lifehack">
+<span class="icon icon_google-plus"></span>Circle Us
+</a>
+<div class="bubble"> 57990 </div>
+</div>
+<div class="pinterest">
+<h5>Follow us on Pinterest and we will inspire you to pursue a happier existence.</h5>
+<a class="button" target="_blank" href="https://www.pinterest.com/lifehack">
+<span class="icon icon_pinterest"></span> Follow Us
+</a>
+<div class="bubble"> 42514 </div>
+</div>
+</div>
+</aside>
+<aside id="welcome-mobile-popup-overlay" class="popup-overlay"></aside>
+<aside id="welcome-mobile-popup-box" class="show-tracker popup" data-section="mobile-welcome-popup" data-popup-type="modal">
+<div class="question-box">
+<a class="close"> × </a>
+<div class="question">
+<h4>It's never too late to start over. If you weren't happy with yesterday, try something different today. Don't stay stuck. Do better.</h4>
+<a class="button agree-button">I Agree</a>
+<a class="button disagree-button">I Disagree </a>
+</div>
+<div class="newsletter">
+<h4>We think so, too!</h4>
+<h5>Join Lifehack newsletter and we will inspire you to pursue a happier existence.</h5>
+<form action="/newsletter/ask-confirm" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<input type="email" id="mce-EMAIL" class="email" name="email" placeholder="Your email address"/>
+<input type="hidden" value="LifeHack" name="uri"/>
+<input type="hidden" value="en_US" name="loc"/>
+<input type="hidden" data-dojo-type="dijit/form/CheckBox" id="group_1" name="group[13][1]" value="1" class="av-checkbox" checked>
+<button class="email-button newsletter-submit button-tracker" type="submit" value="Subscribe">
+Sign up for free!
+</button>
+</form>
+<div class="warning"> Please enter a valid email address</div>
+</div>
+<div class="newsletter-confirm">
+<p>Good to see you here and we hope you'll enjoy reading on Lifehack!</p>
+<p><b>Don't miss our confirmation email for you!</b></p>
+</div>
+<div class="fb-referrer show-tracker">
+<h4>We think so, too!</h4>
+<h5>Like us on facebook and we will inspire you to pursure a happier existence.</h5>
+<div class="fb-like" data-href="https://www.facebook.com/lifehackorg" data-page="fb-app-referrer" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+</div>
+<div class="pinterest-referrer show-tracker">
+<h4>We think so, too!</h4>
+<h5>Follow us on pinterest and we will inspire you to pursure a happier existence.</h5>
+<a class="button button-tracker" href="http://www.pinterest.com/lifehack/" target="_blank"><span class="icon icon_pinterest"></span>Follow us on Pinterest </a>
+</div>
+</div>
+</aside>
+<aside id="after-share-email-box-overlay" class="popup-overlay"></aside>
+<aside id="after-share-email-box" class="show-tracker popup" data-section="mobile-newsletter-popup" data-popup-type="modal">
+<a class="close"> × </a>
+<div class="newsletter">
+<h4>Don't Miss Any Tips!</h4>
+<form action="/newsletter/ask-confirm" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<input type="email" id="mce-EMAIL" class="email" name="email" placeholder="Your email address"/>
+<button class="email-button ok-button newsletter-submit button-tracker" type="submit" value="Subscribe">
+Subscribe
+</button>
+</form>
+<div class="warning"> Please enter a valid email address</div>
+</div>
+<div class="newsletter-confirm">
+<p>Good to see you here and we hope you'll enjoy reading on Lifehack!</p>
+<p><b>Don't miss our confirmation email for you!</b></p>
+</div>
+</aside>
+<aside id="popup-message-overlay" class="popup-overlay"></aside>
+<aside id="popup-message-box" class="popup" data-popup-type="modal">
+<a class="close"> × </a>
+<div id="popup-bookmark-add" class="show-tracker" data-section="popup-bookmark-add">
+<h3>Great!</h3>
+<p>The post is successfully saved to your <a href="/user/my-account?page=collection" target="_blank">collections</a>.</p> </div>
+<div id="popup-bookmark-delete" class="show-tracker" data-section="popup-bookmark-delete">
+<h3>Well Done!</h3>
+<p>You have finished the post and the post is removed from your <a href="/user/my-account?page=collection" target="_blank">collections</a>. Save your next post to read now.</p> </div>
+<div class="facebook-share">
+<p>Love this article? Share it with your friends on Facebook</p>
+<a class="button clearfix">
+<span class="icon icon_facebook"></span> Share it on Facebook
+</a>
+</div>
+</aside>
+</div>
+<script>
+		if (typeof st_go === 'undefined') {
+			var st_go = function () {};
+		}
+		if (typeof load_cmc === 'undefined') {
+			var load_cmc = function () {};
+		}
+		if (typeof linktracker_init === 'undefined') {
+			var linktracker_init = function () {};
+		}
+	</script>	<script>
+			var lh_running_ab_test = ["907B","740A","912A"];
+		</script>
+<script src="http://stats.wordpress.com/e-201513.js" type="text/javascript"></script>
+<script type="text/javascript">
+	st_go({v:'ext',j:'1:2.9.3',blog:'40206189',post:'0',tz:'-4'});
+	var load_cmc = function(){linktracker_init(40206189,0,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"0027bab4d4","applicationID":"2151924","transactionName":"NlFTMUBRX0NWV0RbDQ8bcAZGWV5eGFVCUQoIQlQ=","queueTime":0,"applicationTime":311,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
+</html>

@@ -1,0 +1,434 @@
+0000.001 (0) Opened log file at time: Fri, 10 Apr 2015 12:38:34 +0000 on http://i-howto.com
+0000.002 (0) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.9.63 WP: 4.1.1 PHP: 5.4.38 (Linux ip-172-31-3-84 3.14.27-25.47.amzn1.x86_64 #1 SMP Wed Dec 17 18:36:15 UTC 2014 x86_64) MySQL: 5.5.42 Server: Apache/2.4.12 (Amazon) PHP/5.4.38 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 32.4M | 33M) multisite: N mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.002 (0) Free space on disk containing Updraft's temporary directory: 4544 Mb
+0000.006 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB:  (schedule: daily)
+0000.006 (0) Processed schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.008 (0) Requesting semaphore lock (fd)
+0000.009 (0) Set semaphore last lock (fd) time to 2015-04-10 12:38:34
+0000.009 (0) Semaphore lock (fd) complete
+0000.011 (0) Backup run: resumption=0, nonce=6ca9a3c79f53, begun at=1428669514 (0s ago), job type=backup
+0000.012 (0) Scheduling a resumption (1) after 300 seconds (1428669814) in case this run gets aborted
+0000.017 (0) Checking if we have a zip executable available
+0000.017 (0) Testing: /usr/bin/zip
+0000.029 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.030 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.030 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.031 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=127) (out=105) (deflated 17%)
+0000.031 (0) Output: total bytes=127, compressed=105 -> 17% savings
+0000.034 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=134) (out=109) (deflated 19%)
+0000.034 (0) Output: total bytes=261, compressed=214 -> 18% savings
+0000.040 (0) Working binary zip found: /usr/bin/zip
+0000.041 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.041 (0) Creation of backups of directories: beginning
+0000.043 (0) Beginning creation of dump of plugins (split every: 500 Mb)
+0000.200 (0) Total entities for the zip file: 587 directories, 4189 files (0 skipped as non-modified), 69.2 Mb
+0000.202 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0000.204 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 200 files added (on-disk size: 0 Kb)
+0000.205 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 300 files added (on-disk size: 0 Kb)
+0000.207 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 400 files added (on-disk size: 0 Kb)
+0000.208 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 500 files added (on-disk size: 0 Kb)
+0000.209 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (9.5 Mb, 4189 files batched, 501 (501) added so far); re-opening (prior size: 0 Kb)
+0000.841 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: size is now: 8.00 Mb
+0000.847 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 600 files added (on-disk size: 8182.6 Kb)
+0000.849 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 700 files added (on-disk size: 8182.6 Kb)
+0000.850 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 800 files added (on-disk size: 8182.6 Kb)
+0000.852 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 900 files added (on-disk size: 8182.6 Kb)
+0000.853 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 1000 files added (on-disk size: 8182.6 Kb)
+0000.854 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (21.1 Mb, 4189 files batched, 501 (1002) added so far); re-opening (prior size: 8182.6 Kb)
+0003.025 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: size is now: 16.80 Mb
+0003.031 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 1100 files added (on-disk size: 17250.9 Kb)
+0003.033 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 1200 files added (on-disk size: 17250.9 Kb)
+0003.034 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 1300 files added (on-disk size: 17250.9 Kb)
+0003.036 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 1400 files added (on-disk size: 17250.9 Kb)
+0003.037 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 1500 files added (on-disk size: 17250.9 Kb)
+0003.038 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (1.8 Mb, 4189 files batched, 501 (1503) added so far); re-opening (prior size: 17250.9 Kb)
+0003.244 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 1600 files added (on-disk size: 18052.9 Kb)
+0003.250 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 1700 files added (on-disk size: 18052.9 Kb)
+0003.252 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 1800 files added (on-disk size: 18052.9 Kb)
+0003.257 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 1900 files added (on-disk size: 18052.9 Kb)
+0003.259 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 2000 files added (on-disk size: 18052.9 Kb)
+0003.259 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (6.3 Mb, 4189 files batched, 501 (2004) added so far); re-opening (prior size: 18052.9 Kb)
+0004.244 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 2100 files added (on-disk size: 20812 Kb)
+0004.245 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 2200 files added (on-disk size: 20812 Kb)
+0004.247 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 2300 files added (on-disk size: 20812 Kb)
+0004.248 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 2400 files added (on-disk size: 20812 Kb)
+0004.250 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 2500 files added (on-disk size: 20812 Kb)
+0004.250 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (7.6 Mb, 4189 files batched, 501 (2505) added so far); re-opening (prior size: 20812 Kb)
+0005.088 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 2600 files added (on-disk size: 22937.9 Kb)
+0005.089 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 2700 files added (on-disk size: 22937.9 Kb)
+0005.091 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 2800 files added (on-disk size: 22937.9 Kb)
+0005.092 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 2900 files added (on-disk size: 22937.9 Kb)
+0005.094 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 3000 files added (on-disk size: 22937.9 Kb)
+0005.094 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (2.4 Mb, 4189 files batched, 501 (3006) added so far); re-opening (prior size: 22937.9 Kb)
+0005.932 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 3100 files added (on-disk size: 23967.5 Kb)
+0005.933 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 3200 files added (on-disk size: 23967.5 Kb)
+0005.935 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 3300 files added (on-disk size: 23967.5 Kb)
+0005.936 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 3400 files added (on-disk size: 23967.5 Kb)
+0005.938 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 3500 files added (on-disk size: 23967.5 Kb)
+0005.938 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (13.3 Mb, 4189 files batched, 501 (3507) added so far); re-opening (prior size: 23967.5 Kb)
+0007.224 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: size is now: 30.90 Mb
+0007.231 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 3600 files added (on-disk size: 31612.8 Kb)
+0007.233 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 3700 files added (on-disk size: 31612.8 Kb)
+0007.234 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 3800 files added (on-disk size: 31612.8 Kb)
+0007.236 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 3900 files added (on-disk size: 31612.8 Kb)
+0007.237 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 4000 files added (on-disk size: 31612.8 Kb)
+0007.238 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (6.2 Mb, 4189 files batched, 501 (4008) added so far); re-opening (prior size: 31612.8 Kb)
+0008.220 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip.tmp: 4100 files added (on-disk size: 34063.9 Kb)
+0009.024 (0) Created plugins zip (0) - 34689.6 Kb in 9 s (3862.6 Kb/s) (SHA1 checksum: 675a68273d359d2dc23b00995144fff48fea8ff6)
+0009.025 (0) Beginning creation of dump of themes (split every: 500 Mb)
+0009.041 (0) Total entities for the zip file: 31 directories, 290 files (0 skipped as non-modified), 3.6 Mb
+0009.043 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-themes.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0009.045 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-themes.zip.tmp: 200 files added (on-disk size: 0 Kb)
+0009.331 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-themes.zip.tmp: size is now: 2.60 Mb
+0009.348 (0) Created themes zip (0) - 2659.6 Kb in 0.3 s (8270.3 Kb/s) (SHA1 checksum: 8ce40152d80688193a4870ef7f5ddbd95a7556b8)
+0009.349 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone
+0009.349 (0) Looking for candidates to back up in: /var/www/html/wp-content/uploads
+0009.350 (0) finding files: wpcf7_captcha: adding to list (1)
+0009.350 (0) finding files: pep-vn: adding to list (2)
+0009.350 (0) finding files: landing-pages: adding to list (3)
+0009.351 (0) finding files: wp-statistics: adding to list (4)
+0009.351 (0) finding files: 2015: adding to list (5)
+0009.351 (0) finding files: wordpress-popular-posts: adding to list (6)
+0009.352 (0) Beginning creation of dump of uploads (split every: 500 Mb)
+0009.582 (0) Total entities for the zip file: 317 directories, 2279 files (0 skipped as non-modified), 159.3 Mb
+0009.585 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0009.588 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 200 files added (on-disk size: 0 Kb)
+0009.613 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 300 files added (on-disk size: 0 Kb)
+0009.615 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 400 files added (on-disk size: 0 Kb)
+0009.617 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 Mb added on this batch (25.1 Mb, 2279 files batched, 464 (464) added so far); re-opening (prior size: 0 Kb)
+0012.045 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: size is now: 24.60 Mb
+0012.050 (0) A useful amount of data was added after this amount of zip processing: 3.7 s (normalised: 3.7 s, rate: 6984.8 Kb/s)
+0012.051 (0) Performance is good - will increase the amount of data we attempt to batch (time=3.6833629608154, normalised_time=3.6650981486533, max_time=-1, data points known=0, old_max_bytes=26214400, new_max_bytes=42914648)
+0012.052 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 500 files added (on-disk size: 25178.5 Kb)
+0012.053 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 600 files added (on-disk size: 25178.5 Kb)
+0012.055 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 700 files added (on-disk size: 25178.5 Kb)
+0012.057 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 800 files added (on-disk size: 25178.5 Kb)
+0012.058 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 900 files added (on-disk size: 25178.5 Kb)
+0012.059 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (32.6 Mb, 2279 files batched, 501 (965) added so far); re-opening (prior size: 25178.5 Kb)
+0014.877 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: size is now: 55.90 Mb
+0014.882 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 1000 files added (on-disk size: 57241.3 Kb)
+0014.884 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 1100 files added (on-disk size: 57241.3 Kb)
+0014.886 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 1200 files added (on-disk size: 57241.3 Kb)
+0014.887 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 1300 files added (on-disk size: 57241.3 Kb)
+0014.889 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 1400 files added (on-disk size: 57241.3 Kb)
+0014.890 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (33.2 Mb, 2279 files batched, 501 (1466) added so far); re-opening (prior size: 57241.3 Kb)
+0018.628 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: size is now: 85.90 Mb
+0018.634 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 1500 files added (on-disk size: 87999.5 Kb)
+0018.636 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 1600 files added (on-disk size: 87999.5 Kb)
+0018.638 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 1700 files added (on-disk size: 87999.5 Kb)
+0018.639 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 1800 files added (on-disk size: 87999.5 Kb)
+0018.641 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 1900 files added (on-disk size: 87999.5 Kb)
+0018.642 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 40.9 Mb added on this batch (41.4 Mb, 2279 files batched, 474 (1940) added so far); re-opening (prior size: 87999.5 Kb)
+0023.616 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: size is now: 123.00 Mb
+0023.622 (0) A useful amount of data was added after this amount of zip processing: 5.3 s (normalised: 5.2 s, rate: 8064.3 Kb/s)
+0023.623 (0) Performance is good - will increase the amount of data we attempt to batch (time=5.2553470134735, normalised_time=5.1968236270339, max_time=-1, data points known=0, old_max_bytes=42914648, new_max_bytes=49547166)
+0023.624 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 2000 files added (on-disk size: 125905 Kb)
+0023.626 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 2100 files added (on-disk size: 125905 Kb)
+0023.627 (0) Zip: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip.tmp: 2200 files added (on-disk size: 125905 Kb)
+0029.220 (0) Created uploads zip (0) - 150613.3 Kb in 19.9 s (7580.8 Kb/s) (SHA1 checksum: f638ef17f279002fd93af1e067dddc53df3375b3)
+0029.222 (0) Beginning backup of other directories found in the content directory (index: 0)
+0029.222 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups
+0029.223 (0) Looking for candidates to back up in: /var/www/html/wp-content
+0029.224 (0) finding files: themes: skipping: this is the themes directory
+0029.224 (0) finding files: updraft: skipping: this is the updraft directory
+0029.225 (0) finding files: index.php: adding to list (1)
+0029.225 (0) finding files: uploads: skipping: this is the uploads directory
+0029.225 (0) finding files: upgrade: skipping: excluded by options
+0029.226 (0) finding files: cache: skipping: excluded by options
+0029.226 (0) finding files: aiowps_backups: skipping: excluded by options (glob)
+0029.226 (0) finding files: plugins: skipping: this is the plugins directory
+0029.228 (0) Total entities for the zip file: 0 directories, 1 files (0 skipped as non-modified), 0 Mb
+0029.236 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-others.zip.tmp: size is now: 0.00 Mb
+0029.242 (0) Created others zip (0) - 0.2 Kb in 0 s (12.6 Kb/s) (SHA1 checksum: 160ce9e099b61d6881c04cc08ffd0c4b7f79b293)
+0029.244 (0) Saving backup status to database (elements: 8)
+0029.247 (0) Beginning creation of database dump (WordPress DB)
+0029.249 (0) Testing: /usr/bin/mysqldump
+0029.370 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0029.375 (0) Table wp_options: Total expected rows (approximate): 194
+0029.402 (0) Table wp_options: Total rows added: 432 in 0.03 seconds
+0029.402 (0) Table wp_options: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_options.table.gz - 108.9 Kb)
+0029.404 (0) Table wp_users: Total expected rows (approximate): 191
+0029.410 (0) Table wp_users: Total rows added: 147 in 0.01 seconds
+0029.411 (0) Table wp_users: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_users.table.gz - 10.3 Kb)
+0029.414 (0) Table wp_usermeta: Total expected rows (approximate): 1821
+0029.444 (0) Table wp_usermeta: Total rows added: 1927 in 0.03 seconds
+0029.444 (0) Table wp_usermeta: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_usermeta.table.gz - 19.2 Kb)
+0029.446 (0) Table wp_commentmeta: Total expected rows (approximate): 11
+0029.448 (0) Table wp_commentmeta: Total rows added: 11 in 0.00 seconds
+0029.448 (0) Table wp_commentmeta: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_commentmeta.table.gz - 1.8 Kb)
+0029.450 (0) Table wp_comments: Total expected rows (approximate): 4
+0029.452 (0) Table wp_comments: Total rows added: 4 in 0.00 seconds
+0029.452 (0) Table wp_comments: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_comments.table.gz - 1.6 Kb)
+0029.454 (0) Table wp_links: Total expected rows (approximate): 0
+0029.455 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0029.455 (0) Table wp_links: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_links.table.gz - 0.4 Kb)
+0029.458 (0) Table wp_postmeta: Total expected rows (approximate): 1490
+0029.491 (0) Table wp_postmeta: Total rows added: 1824 in 0.03 seconds
+0029.491 (0) Table wp_postmeta: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_postmeta.table.gz - 44.3 Kb)
+0029.495 (0) Table wp_posts: Total expected rows (approximate): 950
+0029.663 (0) Table wp_posts: Total rows added: 1368 in 0.17 seconds
+0029.663 (0) Table wp_posts: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_posts.table.gz - 387.6 Kb)
+0029.909 (0) Table wp_term_relationships: Total expected rows (approximate): 171
+0029.911 (0) Table wp_term_relationships: Total rows added: 171 in 0.00 seconds
+0029.912 (0) Table wp_term_relationships: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_term_relationships.table.gz - 0.8 Kb)
+0029.914 (0) Table wp_term_taxonomy: Total expected rows (approximate): 15
+0029.920 (0) Table wp_term_taxonomy: Total rows added: 15 in 0.01 seconds
+0029.920 (0) Table wp_term_taxonomy: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_term_taxonomy.table.gz - 0.6 Kb)
+0029.925 (0) Table wp_terms: Total expected rows (approximate): 15
+0029.926 (0) Table wp_terms: Total rows added: 15 in 0.00 seconds
+0029.926 (0) Table wp_terms: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_terms.table.gz - 0.6 Kb)
+0029.928 (0) Table wp_aiowps_events: Total expected rows (approximate): 0
+0029.929 (0) Table wp_aiowps_events: Total rows added: 0 in 0.00 seconds
+0029.930 (0) Table wp_aiowps_events: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_aiowps_events.table.gz - 0.4 Kb)
+0029.931 (0) Table wp_aiowps_failed_logins: Total expected rows (approximate): 53
+0029.933 (0) Table wp_aiowps_failed_logins: Total rows added: 53 in 0.00 seconds
+0029.934 (0) Table wp_aiowps_failed_logins: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_aiowps_failed_logins.table.gz - 1 Kb)
+0029.935 (0) Table wp_aiowps_global_meta: Total expected rows (approximate): 0
+0029.936 (0) Table wp_aiowps_global_meta: Total rows added: 0 in 0.00 seconds
+0029.937 (0) Table wp_aiowps_global_meta: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_aiowps_global_meta.table.gz - 0.4 Kb)
+0029.939 (0) Table wp_aiowps_login_activity: Total expected rows (approximate): 103
+0029.943 (0) Table wp_aiowps_login_activity: Total rows added: 103 in 0.00 seconds
+0029.943 (0) Table wp_aiowps_login_activity: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_aiowps_login_activity.table.gz - 2.8 Kb)
+0029.945 (0) Table wp_aiowps_login_lockdown: Total expected rows (approximate): 10
+0029.946 (0) Table wp_aiowps_login_lockdown: Total rows added: 10 in 0.00 seconds
+0029.947 (0) Table wp_aiowps_login_lockdown: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_aiowps_login_lockdown.table.gz - 0.5 Kb)
+0029.953 (0) Table wp_ap_config: Total expected rows (approximate): 37
+0029.962 (0) Table wp_ap_config: Total rows added: 37 in 0.01 seconds
+0029.963 (0) Table wp_ap_config: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_config.table.gz - 3.6 Kb)
+0029.965 (0) Table wp_ap_config_option: Total expected rows (approximate): 261
+0029.979 (0) Table wp_ap_config_option: Total rows added: 261 in 0.01 seconds
+0029.979 (0) Table wp_ap_config_option: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_config_option.table.gz - 3.2 Kb)
+0029.981 (0) Table wp_ap_config_url_list: Total expected rows (approximate): 391
+0029.987 (0) Table wp_ap_config_url_list: Total rows added: 391 in 0.01 seconds
+0029.988 (0) Table wp_ap_config_url_list: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_config_url_list.table.gz - 4.2 Kb)
+0029.990 (0) Table wp_ap_download_img_temp: Total expected rows (approximate): 0
+0029.992 (0) Table wp_ap_download_img_temp: Total rows added: 0 in 0.00 seconds
+0029.992 (0) Table wp_ap_download_img_temp: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_download_img_temp.table.gz - 0.4 Kb)
+0029.994 (0) Table wp_ap_flickr_img: Total expected rows (approximate): 0
+0029.995 (0) Table wp_ap_flickr_img: Total rows added: 0 in 0.00 seconds
+0029.995 (0) Table wp_ap_flickr_img: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_flickr_img.table.gz - 0.4 Kb)
+0029.997 (0) Table wp_ap_flickr_oauth: Total expected rows (approximate): 1
+0029.998 (0) Table wp_ap_flickr_oauth: Total rows added: 1 in 0.00 seconds
+0029.998 (0) Table wp_ap_flickr_oauth: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_flickr_oauth.table.gz - 0.4 Kb)
+0030.000 (0) Table wp_ap_log: Total expected rows (approximate): 239
+0030.004 (0) Table wp_ap_log: Total rows added: 239 in 0.00 seconds
+0030.005 (0) Table wp_ap_log: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_log.table.gz - 4 Kb)
+0030.007 (0) Table wp_ap_more_content: Total expected rows (approximate): 0
+0030.008 (0) Table wp_ap_more_content: Total rows added: 0 in 0.00 seconds
+0030.008 (0) Table wp_ap_more_content: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_more_content.table.gz - 0.3 Kb)
+0030.010 (0) Table wp_ap_qiniu_img: Total expected rows (approximate): 0
+0030.011 (0) Table wp_ap_qiniu_img: Total rows added: 0 in 0.00 seconds
+0030.011 (0) Table wp_ap_qiniu_img: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_qiniu_img.table.gz - 0.3 Kb)
+0030.012 (0) Table wp_ap_updated_record: Total expected rows (approximate): 16113
+0030.190 (0) Table wp_ap_updated_record: binary mysqldump finished (writes: 37) in 0.18 seconds
+0030.191 (0) Table wp_ap_updated_record: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_updated_record.table.gz - 759.6 Kb)
+0030.193 (0) Table wp_ap_upyun_img: Total expected rows (approximate): 0
+0030.194 (0) Table wp_ap_upyun_img: Total rows added: 0 in 0.00 seconds
+0030.194 (0) Table wp_ap_upyun_img: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_upyun_img.table.gz - 0.3 Kb)
+0030.196 (0) Table wp_ap_watermark: Total expected rows (approximate): 1
+0030.197 (0) Table wp_ap_watermark: Total rows added: 1 in 0.00 seconds
+0030.198 (0) Table wp_ap_watermark: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_watermark.table.gz - 0.6 Kb)
+0030.199 (0) Table wp_autolink: Total expected rows (approximate): 0
+0030.200 (0) Table wp_autolink: Total rows added: 0 in 0.00 seconds
+0030.200 (0) Table wp_autolink: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_autolink.table.gz - 0.3 Kb)
+0030.202 (0) Table wp_autopost_log: Total expected rows (approximate): 38
+0030.204 (0) Table wp_autopost_log: Total rows added: 38 in 0.00 seconds
+0030.204 (0) Table wp_autopost_log: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_autopost_log.table.gz - 0.9 Kb)
+0030.206 (0) Table wp_autopost_record: Total expected rows (approximate): 147
+0030.210 (0) Table wp_autopost_record: Total rows added: 147 in 0.00 seconds
+0030.211 (0) Table wp_autopost_record: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_autopost_record.table.gz - 9.4 Kb)
+0030.212 (0) Table wp_autopost_task: Total expected rows (approximate): 1
+0030.214 (0) Table wp_autopost_task: Total rows added: 1 in 0.00 seconds
+0030.214 (0) Table wp_autopost_task: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_autopost_task.table.gz - 0.8 Kb)
+0030.216 (0) Table wp_autopost_task_urllist: Total expected rows (approximate): 1
+0030.217 (0) Table wp_autopost_task_urllist: Total rows added: 1 in 0.00 seconds
+0030.217 (0) Table wp_autopost_task_urllist: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_autopost_task_urllist.table.gz - 0.4 Kb)
+0030.219 (0) Table wp_autopost_watermark: Total expected rows (approximate): 1
+0030.220 (0) Table wp_autopost_watermark: Total rows added: 1 in 0.00 seconds
+0030.221 (0) Table wp_autopost_watermark: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_autopost_watermark.table.gz - 0.6 Kb)
+0030.222 (0) Table wp_popularpostsdata: Total expected rows (approximate): 16
+0030.224 (0) Table wp_popularpostsdata: Total rows added: 16 in 0.00 seconds
+0030.224 (0) Table wp_popularpostsdata: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_popularpostsdata.table.gz - 0.6 Kb)
+0030.226 (0) Table wp_popularpostssummary: Total expected rows (approximate): 38
+0030.227 (0) Table wp_popularpostssummary: Total rows added: 38 in 0.00 seconds
+0030.228 (0) Table wp_popularpostssummary: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_popularpostssummary.table.gz - 0.8 Kb)
+0030.229 (0) Table wp_scroll_news: Total expected rows (approximate): 0
+0030.230 (0) Table wp_scroll_news: Total rows added: 0 in 0.00 seconds
+0030.231 (0) Table wp_scroll_news: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_scroll_news.table.gz - 0.3 Kb)
+0030.232 (0) Table wp_statistics_exclusions: Total expected rows (approximate): 0
+0030.233 (0) Table wp_statistics_exclusions: Total rows added: 0 in 0.00 seconds
+0030.234 (0) Table wp_statistics_exclusions: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_statistics_exclusions.table.gz - 0.3 Kb)
+0030.235 (0) Table wp_statistics_historical: Total expected rows (approximate): 0
+0030.236 (0) Table wp_statistics_historical: Total rows added: 0 in 0.00 seconds
+0030.237 (0) Table wp_statistics_historical: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_statistics_historical.table.gz - 0.3 Kb)
+0030.239 (0) Table wp_statistics_pages: Total expected rows (approximate): 232
+0030.246 (0) Table wp_statistics_pages: Total rows added: 452 in 0.01 seconds
+0030.247 (0) Table wp_statistics_pages: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_statistics_pages.table.gz - 5.5 Kb)
+0030.248 (0) Table wp_statistics_useronline: Total expected rows (approximate): 1
+0030.250 (0) Table wp_statistics_useronline: Total rows added: 1 in 0.00 seconds
+0030.250 (0) Table wp_statistics_useronline: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_statistics_useronline.table.gz - 0.5 Kb)
+0030.251 (0) Table wp_statistics_visit: Total expected rows (approximate): 13
+0030.253 (0) Table wp_statistics_visit: Total rows added: 13 in 0.00 seconds
+0030.253 (0) Table wp_statistics_visit: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_statistics_visit.table.gz - 0.6 Kb)
+0030.257 (0) Table wp_statistics_visitor: Total expected rows (approximate): 3746
+0030.396 (0) Table wp_statistics_visitor: Total rows added: 3899 in 0.14 seconds
+0030.396 (0) Table wp_statistics_visitor: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_statistics_visitor.table.gz - 46.5 Kb)
+0030.398 (0) Table wp_wsluserscontacts: Total expected rows (approximate): 0
+0030.399 (0) Table wp_wsluserscontacts: Total rows added: 0 in 0.00 seconds
+0030.400 (0) Table wp_wsluserscontacts: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_wsluserscontacts.table.gz - 0.3 Kb)
+0030.401 (0) Table wp_wslusersprofiles: Total expected rows (approximate): 1
+0030.403 (0) Table wp_wslusersprofiles: Total rows added: 1 in 0.00 seconds
+0030.403 (0) Table wp_wslusersprofiles: finishing file (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_wslusersprofiles.table.gz - 0.7 Kb)
+0030.404 (0) Skipping table (lacks our prefix (wp_)): wsw_404_log
+0030.406 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_options.table.gz (1/46): adding to final database dump
+0030.426 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_users.table.gz (2/46): adding to final database dump
+0030.428 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_usermeta.table.gz (3/46): adding to final database dump
+0030.434 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_commentmeta.table.gz (4/46): adding to final database dump
+0030.435 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_comments.table.gz (5/46): adding to final database dump
+0030.436 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_links.table.gz (6/46): adding to final database dump
+0030.436 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_postmeta.table.gz (7/46): adding to final database dump
+0030.448 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_posts.table.gz (8/46): adding to final database dump
+0030.522 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_term_relationships.table.gz (9/46): adding to final database dump
+0030.523 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_term_taxonomy.table.gz (10/46): adding to final database dump
+0030.523 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_terms.table.gz (11/46): adding to final database dump
+0030.523 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_aiowps_events.table.gz (12/46): adding to final database dump
+0030.524 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_aiowps_failed_logins.table.gz (13/46): adding to final database dump
+0030.525 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_aiowps_global_meta.table.gz (14/46): adding to final database dump
+0030.525 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_aiowps_login_activity.table.gz (15/46): adding to final database dump
+0030.526 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_aiowps_login_lockdown.table.gz (16/46): adding to final database dump
+0030.527 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_config.table.gz (17/46): adding to final database dump
+0030.528 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_config_option.table.gz (18/46): adding to final database dump
+0030.529 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_config_url_list.table.gz (19/46): adding to final database dump
+0030.531 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_download_img_temp.table.gz (20/46): adding to final database dump
+0030.532 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_flickr_img.table.gz (21/46): adding to final database dump
+0030.532 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_flickr_oauth.table.gz (22/46): adding to final database dump
+0030.532 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_log.table.gz (23/46): adding to final database dump
+0030.534 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_more_content.table.gz (24/46): adding to final database dump
+0030.535 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_qiniu_img.table.gz (25/46): adding to final database dump
+0030.535 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_updated_record.table.gz (26/46): adding to final database dump
+0030.667 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_upyun_img.table.gz (27/46): adding to final database dump
+0030.668 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_ap_watermark.table.gz (28/46): adding to final database dump
+0030.669 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_autolink.table.gz (29/46): adding to final database dump
+0030.669 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_autopost_log.table.gz (30/46): adding to final database dump
+0030.670 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_autopost_record.table.gz (31/46): adding to final database dump
+0030.672 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_autopost_task.table.gz (32/46): adding to final database dump
+0030.672 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_autopost_task_urllist.table.gz (33/46): adding to final database dump
+0030.673 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_autopost_watermark.table.gz (34/46): adding to final database dump
+0030.673 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_popularpostsdata.table.gz (35/46): adding to final database dump
+0030.674 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_popularpostssummary.table.gz (36/46): adding to final database dump
+0030.674 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_scroll_news.table.gz (37/46): adding to final database dump
+0030.675 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_statistics_exclusions.table.gz (38/46): adding to final database dump
+0030.675 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_statistics_historical.table.gz (39/46): adding to final database dump
+0030.675 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_statistics_pages.table.gz (40/46): adding to final database dump
+0030.677 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_statistics_useronline.table.gz (41/46): adding to final database dump
+0030.678 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_statistics_visit.table.gz (42/46): adding to final database dump
+0030.678 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_statistics_visitor.table.gz (43/46): adding to final database dump
+0030.694 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_wsluserscontacts.table.gz (44/46): adding to final database dump
+0030.694 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db-table-wp_wslusersprofiles.table.gz (45/46): adding to final database dump
+0030.695 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db.gz: finished writing out complete database file (1400 Kb)
+0030.702 (0) Total database tables backed up: 45 (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db.gz, size: 1451933, checksum (SHA1): 7c01b4c4a9283e65e493bc99d0d0e8774714d7e1)
+0030.703 (0) Saving backup history
+0030.705 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0030.706 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0030.707 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0030.707 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-others.zip: others: This file has not yet been successfully uploaded: will queue
+0030.707 (0) backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db.gz: db: This file has not yet been successfully uploaded: will queue
+0030.709 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0030.710 (0) Cloud backup selection (1/1): s3 (last)
+0030.710 (0) Beginning dispatch of backup to remote (s3)
+0031.515 (0) Set region: ap-southeast-1
+0031.516 (0) S3 upload (ap-southeast-1): backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip (chunks: 7) -> s3://ihowto-backup/backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip
+0031.596 (0) S3 chunked upload: got multipart ID: QngazO4hybFW5QIpglZjrJatv1aFXebD6VNuFkc_g3IHSqYL9ZYMZ1tTrH1owJsQkR9aC_VyQeS.b4f1gFcMr9J522yj3pzW0TeAMNaGKhBYY7r6QjYbR1JKstLcW2YUc4TS1rdSq3htx7xdjZ0LXg--
+0031.869 (0) S3 chunked upload: 14.3 % uploaded (1, "d8c5125bed7e981d0a859948beeb55fd")
+0032.076 (0) S3 chunked upload: 28.6 % uploaded (2, "708db2e7db06da22e4d7b2886e0b581f")
+0032.321 (0) S3 chunked upload: 42.9 % uploaded (3, "8aa0555c74c04663a153bf3945e931eb")
+0032.541 (0) S3 chunked upload: 57.1 % uploaded (4, "0da2a547f8e0c7248bb10919302d43ca")
+0032.766 (0) S3 chunked upload: 71.4 % uploaded (5, "8c42466193f051518d08933365a0213d")
+0032.992 (0) S3 chunked upload: 85.7 % uploaded (6, "9f1c3d51284dafd33bf4da0ca5cce265")
+0033.189 (0) S3 chunked upload: 100 % uploaded (7, "4be98ef5a5c6f9f48a705340786873fc")
+0033.190 (0) S3 upload: all chunks uploaded; will now instruct S3 to re-assemble
+0033.284 (0) S3 upload (plugins0): re-assembly succeeded
+0033.285 (0) Recording as successfully uploaded: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip (b56c60b61a8103aa18ac6dbd08b155f2)
+0033.291 (0) Deleting local file: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-plugins.zip: OK
+0033.291 (0) S3 upload (ap-southeast-1): backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-themes.zip (chunks: 1) -> s3://ihowto-backup/backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-themes.zip
+0033.413 (0) S3 regular upload: success
+0033.414 (0) Recording as successfully uploaded: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-themes.zip (2fe914c487c644dee47553cbb585ca94)
+0033.416 (0) Deleting local file: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-themes.zip: OK
+0033.416 (0) S3 upload (ap-southeast-1): backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip (chunks: 30) -> s3://ihowto-backup/backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip
+0033.428 (0) S3 chunked upload: got multipart ID: 21af3HPljGYoDSP57DyG.zG2gI6h3Vx2SKIGY7kQ1mSjYK0y9P738OtiDWscjPU_RrEsEY2phHY2M5bEwVcyEE9LJDMScV_6Z0r5MkJ5KyiavKfTdvtOnsK1pvqRcWA.2aKL7PluVfORZW_J2pya7Q--
+0033.812 (0) S3 chunked upload: 3.3 % uploaded (1, "3de29d7570530d1fa87835994cd2dcdf")
+0034.027 (0) S3 chunked upload: 6.7 % uploaded (2, "4e81d301998114d7729682ea1cd1b8cf")
+0034.276 (0) S3 chunked upload: 10 % uploaded (3, "1fa0be1f5bfe998cd501868181fc2e18")
+0034.516 (0) S3 chunked upload: 13.3 % uploaded (4, "4c0509df6e7eea4add95cb93538bd123")
+0034.757 (0) S3 chunked upload: 16.7 % uploaded (5, "fba720f036ecb95392bbac2264cc12d8")
+0034.975 (0) S3 chunked upload: 20 % uploaded (6, "0b2a1dc90909791c54d05556284e84cf")
+0035.194 (0) S3 chunked upload: 23.3 % uploaded (7, "81a09965495f8a99fc7673245d018434")
+0035.438 (0) S3 chunked upload: 26.7 % uploaded (8, "9f5f2228db7ffee93539738fe2a0dc3f")
+0035.667 (0) S3 chunked upload: 30 % uploaded (9, "5d4a5145e519818ea25edced0584d6b8")
+0035.897 (0) S3 chunked upload: 33.3 % uploaded (10, "0de8a1990ab2f879afb545278f3268bb")
+0036.109 (0) S3 chunked upload: 36.7 % uploaded (11, "9d2a1f5e8f19c702727984a8400c48fc")
+0036.324 (0) S3 chunked upload: 40 % uploaded (12, "abd652638ee5b7823bf7e2adb8c78178")
+0036.561 (0) S3 chunked upload: 43.3 % uploaded (13, "799a64da3f178a0aac5c24de945f610c")
+0036.795 (0) S3 chunked upload: 46.7 % uploaded (14, "59f59b2966eb83a884922725abdf00b7")
+0037.037 (0) S3 chunked upload: 50 % uploaded (15, "cf72821c9e81372d8dfb6955ebf91dc2")
+0037.277 (0) S3 chunked upload: 53.3 % uploaded (16, "fcfa0b8dd215e437226fdd6326946e65")
+0037.494 (0) S3 chunked upload: 56.7 % uploaded (17, "0883d64a2b902b80cfa0454ec8f27ebc")
+0037.707 (0) S3 chunked upload: 60 % uploaded (18, "64907ca32ea3f667141a62bfe22458ae")
+0037.943 (0) S3 chunked upload: 63.3 % uploaded (19, "25ea9135759498445af68d2fc8d611b2")
+0038.178 (0) S3 chunked upload: 66.7 % uploaded (20, "1dcd389ecb1f44137f15b455589ea306")
+0038.392 (0) S3 chunked upload: 70 % uploaded (21, "310cc9dea3c70d7b632a0250aee10893")
+0038.612 (0) S3 chunked upload: 73.3 % uploaded (22, "d231e6b65e31513608cf3b49281880c4")
+0038.846 (0) S3 chunked upload: 76.7 % uploaded (23, "dfc5d0944ebbd49028c4300490f735ae")
+0039.062 (0) S3 chunked upload: 80 % uploaded (24, "c4676bd90d723093224706f8846838e4")
+0039.278 (0) S3 chunked upload: 83.3 % uploaded (25, "da5320c0579468e91bb1e65f78569bc8")
+0039.491 (0) S3 chunked upload: 86.7 % uploaded (26, "1acdfaeecbbfd28267856287f36b2455")
+0039.729 (0) S3 chunked upload: 90 % uploaded (27, "5664f52a06e34d9a0c05774f87361bf0")
+0039.962 (0) S3 chunked upload: 93.3 % uploaded (28, "dc98ee1a7c75ad8a54cf3f89433b290d")
+0040.178 (0) S3 chunked upload: 96.7 % uploaded (29, "9b9b6523ff12fc54385f9fef035628df")
+0040.302 (0) S3 chunked upload: 100 % uploaded (30, "9fb84b613fd7d77337f97f6237fa66a3")
+0040.303 (0) S3 upload: all chunks uploaded; will now instruct S3 to re-assemble
+0040.358 (0) S3 upload (uploads0): re-assembly succeeded
+0040.359 (0) Recording as successfully uploaded: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip (a51de825fc4a4aff456393e1ca0411d2)
+0040.376 (0) Deleting local file: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-uploads.zip: OK
+0040.377 (0) S3 upload (ap-southeast-1): backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-others.zip (chunks: 1) -> s3://ihowto-backup/backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-others.zip
+0040.429 (0) S3 regular upload: success
+0040.430 (0) Recording as successfully uploaded: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-others.zip (6754db3133f0ccb7927647e374ec8ce1)
+0040.431 (0) Deleting local file: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-others.zip: OK
+0040.432 (0) S3 upload (ap-southeast-1): backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db.gz (chunks: 1) -> s3://ihowto-backup/backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db.gz
+0040.532 (0) S3 regular upload: success
+0040.533 (0) Recording as successfully uploaded: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db.gz (7a1c1ca63f93aa5213e51a22306d37f6)
+0040.535 (0) Deleting local file: backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db.gz: OK
+0040.536 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0040.537 (0) Number of backup sets in history: 3
+0040.537 (0) Examining backup set with datestamp: 1428669514 (Apr 10 2015 12:38:34)
+0040.538 (0) 1428669514: db: this set includes a database (backup_2015-04-10-1938_IHowTo_Show_You_How_to_do_it_6ca9a3c79f53-db.gz); db count is now 1
+0040.539 (0) 1428669514: this backup set remains non-empty (1/1); will retain in history
+0040.539 (0) Examining backup set with datestamp: 1428583086 (Apr 09 2015 12:38:06)
+0040.539 (0) 1428583086: db: this set includes a database (backup_2015-04-09-1938_IHowTo_Show_You_How_to_do_it_8fdbee91abe5-db.gz); db count is now 2
+0040.540 (0) 1428583086: this backup set remains non-empty (1/1); will retain in history
+0040.540 (0) Examining backup set with datestamp: 1428496673 (Apr 08 2015 12:37:53)
+0040.541 (0) 1428496673: db: this set includes a database (backup_2015-04-08-1937_IHowTo_Show_You_How_to_do_it_3c0c9862630d-db.gz); db count is now 3
+0040.541 (0) 1428496673: db: over retain limit (2); will delete this database
+0040.541 (0) Delete file: backup_2015-04-08-1937_IHowTo_Show_You_How_to_do_it_3c0c9862630d-db.gz, service=s3
+0040.542 (0) S3: Delete remote: bucket=ihowto-backup, URI=backup_2015-04-08-1937_IHowTo_Show_You_How_to_do_it_3c0c9862630d-db.gz
+0040.559 (0) plugins: 1428496673: over retain limit (2); will delete this file (backup_2015-04-08-1937_IHowTo_Show_You_How_to_do_it_3c0c9862630d-plugins.zip)
+0040.559 (0) themes: 1428496673: over retain limit (2); will delete this file (backup_2015-04-08-1937_IHowTo_Show_You_How_to_do_it_3c0c9862630d-themes.zip)
+0040.560 (0) uploads: 1428496673: over retain limit (2); will delete this file (backup_2015-04-08-1937_IHowTo_Show_You_How_to_do_it_3c0c9862630d-uploads.zip)
+0040.560 (0) others: 1428496673: over retain limit (2); will delete this file (backup_2015-04-08-1937_IHowTo_Show_You_How_to_do_it_3c0c9862630d-others.zip)
+0040.560 (0) Delete file: backup_2015-04-08-1937_IHowTo_Show_You_How_to_do_it_3c0c9862630d-plugins.zip, service=s3
+0040.561 (0) Delete file: backup_2015-04-08-1937_IHowTo_Show_You_How_to_do_it_3c0c9862630d-themes.zip, service=s3
+0040.561 (0) Delete file: backup_2015-04-08-1937_IHowTo_Show_You_How_to_do_it_3c0c9862630d-uploads.zip, service=s3
+0040.561 (0) Delete file: backup_2015-04-08-1937_IHowTo_Show_You_How_to_do_it_3c0c9862630d-others.zip, service=s3
+0040.562 (0) S3: Delete remote: bucket=ihowto-backup, URI=backup_2015-04-08-1937_IHowTo_Show_You_How_to_do_it_3c0c9862630d-plugins.zip
+0040.579 (0) S3: Delete remote: bucket=ihowto-backup, URI=backup_2015-04-08-1937_IHowTo_Show_You_How_to_do_it_3c0c9862630d-themes.zip
+0040.594 (0) S3: Delete remote: bucket=ihowto-backup, URI=backup_2015-04-08-1937_IHowTo_Show_You_How_to_do_it_3c0c9862630d-uploads.zip
+0040.608 (0) S3: Delete remote: bucket=ihowto-backup, URI=backup_2015-04-08-1937_IHowTo_Show_You_How_to_do_it_3c0c9862630d-others.zip
+0040.625 (0) 1428496673: this backup set is now empty; will remove from history
+0040.625 (0) 1428496673: deleting log file (log.3c0c9862630d.txt)
+0040.628 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0040.629 (0) Resume backup (6ca9a3c79f53, 0): finish run
+0040.631 (0) Decremented the semaphore (fd) by 1
+0040.631 (0) Semaphore (fd) unlocked
+0040.632 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0040.633 (0) No email will/can be sent - the user has not configured an email address.
+0040.634 (0) The backup apparently succeeded and is now complete

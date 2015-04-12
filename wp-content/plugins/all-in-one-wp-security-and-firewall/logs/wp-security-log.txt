@@ -1,0 +1,4 @@
+[04/12/2015 1:51 AM] - FAILURE : Error inserting record into wp_aiowps_login_activity
+[04/12/2015 1:52 AM] - FAILURE : Error inserting record into wp_aiowps_login_activity
+[04/12/2015 1:53 AM] - FAILURE : Error inserting record into wp_aiowps_login_activity
+[04/12/2015 2:32 AM] - NOTICE : Login attempt from blocked IP range - 46.118.123.*
